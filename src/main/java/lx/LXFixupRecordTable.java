@@ -145,6 +145,7 @@ public class LXFixupRecordTable {
                 int offset = reader.readNextUnsignedShort();
                 this.dstOffset[i] = (int)offsetBase + offset;
             }
+            size += 2 * srcoff_count;
         } else {
             this.dstOffset = new int[1];
             this.dstOffset[0] = (int)offsetBase + srcoff_count;
